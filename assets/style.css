@@ -1,0 +1,70 @@
+.largeTitle {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 30%;
+}
+
+.player {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 10%;
+}
+
+.link1 {
+    animation-name: Link1SlideIn;
+    animation-duration: 2s;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 5%;
+}
+
+.link2 {
+    animation-name: Link2SlideIn;
+    animation-duration: 3s;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 30%;
+}
+
+
+
+
+
+
+
+
+/* animation=== */
+
+@keyframes Link1SlideIn {
+    from {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        bottom: 0%;
+    }
+    to {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        bottom: 5%;
+    }
+}
+
+@keyframes Link2SlideIn {
+    from {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        bottom: 0%;
+    }
+    to {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        bottom: 30%;
+    }
+}
