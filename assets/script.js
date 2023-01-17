@@ -25,7 +25,7 @@ if (getCookie("oNumber") == 1) {
 }
 else {
     alert(rNumber) //操作
-    setCookie("oNumber",1,7)
-    setCookie("rNumber",rNumber,7)
+    setCookie("oNumber",1,0) //实际使用将0改成7
+    setCookie("rNumber",rNumber,0) //实际使用将0改成7
 
 }
