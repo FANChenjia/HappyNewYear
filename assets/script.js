@@ -24,6 +24,7 @@ function getCookie(cname) {
 //rNumber:0-9随机数
 //根据rNumber不同显示不同页面
 //oNumber用户打开页面次数
+var rNumber = Math.floor(Math.random() * 10);
 var rSites = '{ "sites":[' +
 '{"title": "上上签", "text": "时来运转,和乐平安"},' +
 '{"title": "上上签", "text": "喜气盈门,岁且更始"},' +
@@ -35,19 +36,18 @@ var rSites = '{ "sites":[' +
 '{"title": "中吉签", "text": "门凝瑞霭,户发春光"},' +
 '{"title": "中吉签", "text": "时乃日新,三阳开泰"},' +
 '{"title": "中吉签", "text": "金玉满堂,喜气洋洋"} ]}';
+var obj = JSON.parse(rSites);
 //oNumber=1时
-if (getCookie("oNumber") == 1) { //已经打开过了
-    obj = JSON.parse(rSites);
-    var cookieRnumber = getCookie("rNumber") + 1;
+if (getCookie("coNumber") == 1) { //已经打开过了
+    var cookieRnumber = Number(getCookie("crNumber"))+1;
     document.getElementById("rTitle").innerHTML = obj.sites[cookieRnumber].title;
     document.getElementById("rMain").innerHTML = obj.sites[cookieRnumber].text;
 }
 else { //未打开过
-    var rNumber = Math.floor(Math.random() * 10);
-    obj = JSON.parse(rSites);
-    setCookie("oNumber", 1, 7); //实际使用将0改成7
-    setCookie("rNumber", rNumber, 7); //实际使用将0改成7
-    var cookieRnumber = getCookie("rNumber") + 1;
+    var cookieRnumber = rNumber+1;
     document.getElementById("rTitle").innerHTML = obj.sites[cookieRnumber].title;
     document.getElementById("rMain").innerHTML = obj.sites[cookieRnumber].text;
+    setCookie("coNumber", 1, 7); //实际使用将0改成7
+    setCookie("crNumber", rNumber, 7); //实际使用将0改成7
 }
+
