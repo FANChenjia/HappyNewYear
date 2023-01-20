@@ -34,9 +34,6 @@
 
 
 
-
-
-
 /* animation=== */
 
 @keyframes Link1SlideIn {
@@ -66,5 +63,21 @@
         left: 50%;
         transform: translate(-50%, -50%);
         bottom: 30%;
+    }
+}
+
+@keyframes ClrPageSlidein {
+    from {
+        position: absolute;
+        left: 50%;
+        bottom: -75%;
+        transform: translate(-50%, 0);
+    }
+
+    to {
+        position: absolute;
+        left: 50%;
+        bottom: 15%;
+        transform: translate(-50%, 0);
     }
 }
