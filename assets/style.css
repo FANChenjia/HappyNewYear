@@ -71,13 +71,13 @@
         position: absolute;
         left: 50%;
         bottom: -75%;
-        transform: translate(-50%, 0);
+        /* transform: translate(-50%, 0); */
     }
 
     to {
         position: absolute;
         left: 50%;
-        bottom: 15%;
-        transform: translate(-50%, 0);
+        bottom: 5%;
+        /* transform: translate(-50%, 0); */
     }
 }
