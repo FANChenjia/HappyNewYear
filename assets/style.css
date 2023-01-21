@@ -30,7 +30,14 @@
     bottom: 30%;
 }
 
-
+.link3 {
+    animation-name: Link3SlideIn;
+    animation-duration: 3s;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top:15%;
+}
 
 
 
@@ -63,6 +70,21 @@
         left: 50%;
         transform: translate(-50%, -50%);
         bottom: 30%;
+    }
+}
+
+@keyframes Link3SlideIn {
+    from {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 0%;
+    }
+    to {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 15%;
     }
 }
 
