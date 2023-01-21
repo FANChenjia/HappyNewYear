@@ -31,12 +31,12 @@
 }
 
 .link3 {
-    animation-name: Link3SlideIn;
-    animation-duration: 3s;
+    /* animation-name: Link3SlideIn;
+    animation-duration: 3s; */
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
-    top:15%;
+    top: 15%;
 }
 
 
@@ -73,7 +73,7 @@
     }
 }
 
-@keyframes Link3SlideIn {
+/* @keyframes Link3SlideIn {
     from {
         position: absolute;
         left: 50%;
@@ -86,7 +86,7 @@
         transform: translate(-50%, -50%);
         top: 15%;
     }
-}
+} */
 
 @keyframes ClrPageSlidein {
     from {
