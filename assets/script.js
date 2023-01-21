@@ -50,6 +50,3 @@ else { //未打开过
     setCookie("coNumber", 1, 7); //实际使用将0改成7
     setCookie("crNumber", rNumber, 7); //实际使用将0改成7
 }
-
-setCookie("coNumber", 0, 0); //实际使用将0改成7
-setCookie("crNumber", rNumber, 0); //实际使用将0改成7
